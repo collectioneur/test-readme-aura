@@ -324,6 +324,15 @@
 </div>
 ```
 
+```aura width=860 height=400
+<div style={{ position: 'relative', width: '100%', height: '100%', background: '#000000', borderRadius: 20, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Inter, sans-serif' }}>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif" width={860} height={400} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.7 }} />
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
+    <span style={{ fontSize: 64, fontWeight: 800, color: 'white', letterSpacing: '-2px', textShadow: '0 0 40px rgba(100,180,255,0.5)' }}>hello world</span>
+  </div>
+</div>
+```
+
 ```aura width=860 height=22 link="https://collectioneur.github.io/readme-aura/"
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', padding: 0, margin: 0 }}>
     <span style={{ fontSize: 12, lineHeight: 1, color: 'rgba(150,140,200,0.55)', fontWeight: 500, letterSpacing: '0.4px' }}>powered by readme-aura</span>
