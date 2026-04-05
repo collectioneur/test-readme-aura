@@ -347,3 +347,31 @@
     <span style={{ fontSize: 12, lineHeight: 1, color: 'rgba(150,140,200,0.55)', fontWeight: 500, letterSpacing: '0.4px' }}>powered by readme-aura</span>
   </div>
 ```
+
+```aura width=100 height=40 link="https://x.com/collectioneurr"
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', padding: 0, margin: 0, border: '0.5px solid #AAAAAA', borderRadius: '50px', backgroundColor: "#111111"}}>
+<svg width="100" height="40" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tw-holo" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#ffffff" />
+      <stop offset="10%" stopColor="#111111" />
+      <stop offset="50%" stopColor="#eeeeee" />
+      <stop offset="60%" stopColor="#ffbbaa" />
+      <stop offset="80%" stopColor="#111111" />
+      <stop offset="100%" stopColor="#555555" />
+      <animateTransform
+        attributeName="gradientTransform"
+        type="rotate"
+        from="0 0.5 0.5"
+        to="360 0.5 0.5"
+        dur="8s"
+        repeatCount="indefinite"
+      />
+    </linearGradient>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="97" height="37" rx="18.5" ry="18.5" fill="none" stroke="url(#tw-holo)" strokeWidth="2" strokeLinecap="round"></rect>
+</svg>
+
+</div>
+```
