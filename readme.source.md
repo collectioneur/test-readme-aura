@@ -348,11 +348,6 @@
   </div>
 ```
 
-|     |     |
-| :-: | :-: |
-
-|
-
 ```aura width=150 height=40 link="https://x.com/collectioneurr"
 <div style={{ position: 'relative', display: 'flex', width: '100%', height: '100%', backgroundColor: '#111111', borderRadius: 20, boxSizing: 'border-box' }}>
   <svg width="150" height="40" viewBox="0 0 150 40" overflow="visible" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible' }}>
@@ -384,8 +379,6 @@
 </div>
 ```
 
-|
-
 ```aura width=150 height=40 link="https://x.com/collectioneurr"
 <div style={{ position: 'relative', display: 'flex', width: '100%', height: '100%', backgroundColor: '#111111', borderRadius: 20, boxSizing: 'border-box' }}>
   <svg width="150" height="40" viewBox="0 0 150 40" overflow="visible" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible' }}>
@@ -416,5 +409,3 @@
   </div>
 </div>
 ```
-
-|
