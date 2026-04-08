@@ -1,41 +1,41 @@
-name: Generate README
+# name: Generate README
 
-on:
-  push:
-    branches: [main]
-    paths: ['readme.source.md']
-  schedule:
-    - cron: '0 6 * * *'
-  workflow_dispatch:
+# on:
+#   push:
+#     branches: [main]
+#     paths: ['readme.source.md']
+#   schedule:
+#     - cron: '0 6 * * *'
+#   workflow_dispatch:
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+# jobs:
+#   generate:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
 
-      - name: Update cached profile views value
-        env:
-          PROFILE_USERNAME: collectioneur
-        run: |
-          set -euo pipefail
+#       - name: Update cached profile views value
+#         env:
+#           PROFILE_USERNAME: collectioneur
+#         run: |
+#           set -euo pipefail
 
-          svg="$(curl -fsSL "https://komarev.com/ghpvc/?username=${PROFILE_USERNAME}&style=flat-square")"
-          views="$(printf '%s' "${svg}" | grep -oE '<text [^>]*y="14">[^<]+' | sed 's/.*>//' | tail -n1)"
+#           svg="$(curl -fsSL "https://komarev.com/ghpvc/?username=${PROFILE_USERNAME}&style=flat-square")"
+#           views="$(printf '%s' "${svg}" | grep -oE '<text [^>]*y="14">[^<]+' | sed 's/.*>//' | tail -n1)"
 
-          if [[ -z "${views}" ]]; then
-            echo "Failed to parse profile views from komarev response"
-            exit 1
-          fi
+#           if [[ -z "${views}" ]]; then
+#             echo "Failed to parse profile views from komarev response"
+#             exit 1
+#           fi
 
-          echo "Parsed profile views: ${views}"
+#           echo "Parsed profile views: ${views}"
 
-          VIEWS="${views}" perl -i -pe 's{(<span dataCounter="profile-views-value"[^>]*>)([^<]+)(</span>)}{$1 . $ENV{VIEWS} . $3}e' readme.source.md
+#           VIEWS="${views}" perl -i -pe 's{(<span dataCounter="profile-views-value"[^>]*>)([^<]+)(</span>)}{$1 . $ENV{VIEWS} . $3}e' readme.source.md
 
-      - name: Generate README
-        uses: collectioneur/readme-aura@main
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Generate README
+#         uses: collectioneur/readme-aura@main
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
