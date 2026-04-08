@@ -1,5 +1,7 @@
 # SMIL Animation Experiments
 
+![](https://komarev.com/ghpvc/?username=collectioneur&style=pixel)
+
 ```aura width=860 height=280
 <div style={{ position: 'relative', width: '100%', height: '100%', background: '#06060e', borderRadius: 20, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Inter, sans-serif' }}>
   <svg width="860" height="280" style={{ position: 'absolute', top: 0, left: 0 }}>
@@ -338,6 +340,38 @@
   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2hpZnQxYjU0NHF0N3l6bHdzMHFkNGp5YTRpcWg5NmczNW83bWo2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jRiUEeFanZ94UZEVoQ/giphy.gif" width={860} height={400} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.7 }} />
   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', zIndex: 10 }}>
     <span style={{ fontSize: 64, fontWeight: 800, color: 'white', letterSpacing: '-2px', textShadow: '0 0 40px rgba(100,180,255,0.5)' }}>hello world</span>
+  </div>
+</div>
+```
+
+```aura width=860 height=180
+<div style={{ position: 'relative', width: '100%', height: '100%', background: 'linear-gradient(115deg, #060b1a 0%, #071329 40%, #0b1e35 100%)', borderRadius: 18, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Inter, sans-serif' }}>
+  <svg width="860" height="180" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <linearGradient id="pv-line" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stopColor="rgba(80,180,255,0)" />
+        <stop offset="50%" stopColor="rgba(80,180,255,0.55)" />
+        <stop offset="100%" stopColor="rgba(80,180,255,0)" />
+      </linearGradient>
+      <filter id="pv-glow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6">
+          <animate attributeName="stdDeviation" values="4;10;4" dur="3.8s" repeatCount="indefinite" />
+        </feGaussianBlur>
+      </filter>
+    </defs>
+    <rect x="30" y="46" width="800" height="1" fill="url(#pv-line)">
+      <animate attributeName="opacity" values="0.35;0.85;0.35" dur="4s" repeatCount="indefinite" />
+    </rect>
+    <rect x="30" y="134" width="800" height="1" fill="url(#pv-line)">
+      <animate attributeName="opacity" values="0.25;0.7;0.25" dur="5s" repeatCount="indefinite" begin="0.8s" />
+    </rect>
+    <circle cx="430" cy="90" r="42" fill="rgba(70,130,255,0.16)" filter="url(#pv-glow)">
+      <animate attributeName="r" values="36;52;36" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+  </svg>
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10 }}>
+    <span style={{ fontSize: 13, color: 'rgba(180,215,255,0.72)', letterSpacing: '1.8px', textTransform: 'uppercase' }}>Profile Views Snapshot</span>
+    <span dataCounter="profile-views-value" style={{ fontSize: 48, fontWeight: 800, color: '#e7f1ff', letterSpacing: '-1px', textShadow: '0 0 26px rgba(120,180,255,0.35)', marginTop: 2 }}>0</span>
   </div>
 </div>
 ```
