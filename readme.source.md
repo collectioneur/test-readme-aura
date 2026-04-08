@@ -31,8 +31,8 @@
 </div>
 ```
 
-```aura width=360 height=200
-<div style={{ position: 'relative', display: 'flex', width: '100%', height: '100%', background: 'linear-gradient(to right, #607d8b66, #000c4066)', borderRadius: 20, boxSizing: 'border-box', overflow: "hidden", boxShadow: 'inset 0 5px 15px 0 rgba(255,255,255,0.2), inset 0 -5px 15px 0 rgba(255,255,255,0.1), inset 5px 0 15px 0 rgba(255,255,255,0.1), inset -5px 0 15px 0 rgba(255,255,255,0.1)' }}>
+```aura width=380 height=200
+<div style={{ position: 'relative', display: 'flex', width: '360px', height: '100%', background: 'linear-gradient(to right, #607d8b66, #000c4066)', borderRadius: 20, boxSizing: 'border-box', overflow: "hidden", boxShadow: 'inset 0 5px 15px 0 rgba(255,255,255,0.2), inset 0 -5px 15px 0 rgba(255,255,255,0.1), inset 5px 0 15px 0 rgba(255,255,255,0.1), inset -5px 0 15px 0 rgba(255,255,255,0.1)' }}>
   <svg width="360" height="200" viewBox="0 0 360 200" overflow="visible" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible' }}>
     <defs>
       <linearGradient id="tw-holo-li" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
@@ -64,8 +64,8 @@
 </div>
 ```
 
-```aura width=200 height=200
-<div style={{ position: 'relative', display: 'flex', width: '100%', height: '100%', background: 'linear-gradient(to left, #f8cdda66, #1d2b6466)', borderRadius: 20, boxSizing: 'border-box', overflow: "hidden", boxShadow: 'inset 0 5px 15px 0 rgba(255,255,255,0.2), inset 0 -5px 15px 0 rgba(255,255,255,0.1), inset 5px 0 15px 0 rgba(255,255,255,0.1), inset -5px 0 15px 0 rgba(255,255,255,0.1)' }}>
+```aura width=220 height=200
+<div style={{ position: 'relative', display: 'flex', width: '200px', height: '100%', background: 'linear-gradient(to left, #f8cdda66, #1d2b6466)', borderRadius: 20, boxSizing: 'border-box', overflow: "hidden", boxShadow: 'inset 0 5px 15px 0 rgba(255,255,255,0.2), inset 0 -5px 15px 0 rgba(255,255,255,0.1), inset 5px 0 15px 0 rgba(255,255,255,0.1), inset -5px 0 15px 0 rgba(255,255,255,0.1)' }}>
   <svg width="200" height="200" viewBox="0 0 200 200" overflow="visible" xmlns="http://www.w3.org/2000/svg" style={{ position: 'absolute', top: 0, left: 0, pointerEvents: 'none', overflow: 'visible' }}>
     <defs>
       <linearGradient id="tw-holo-li" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
